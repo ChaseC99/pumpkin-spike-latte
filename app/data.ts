@@ -100,11 +100,13 @@ export function getTeamWins(games: Game[]): TeamWins[] {
         return acc;
     }, {} as { [teamName: string]: TeamWins });
 
+    const excludeIds = new Set([1, 2, 3, 4]);
+
     // Sum up the number of set wins for each team
     for (const game of games) {
         const { team1Name, team2Name } = game;
         for (const set of game.sets) {
-            if (set.team1Score !== 0 || set.team2Score !== 0) {
+            if ((set.team1Score !== 0 || set.team2Score !== 0) && !excludeIds.has(game.id)){
                 const winningTeam = set.team1Score > set.team2Score ? team1Name : team2Name;
                 if (teamWins[winningTeam]) {
                     teamWins[winningTeam].wins += 1;
