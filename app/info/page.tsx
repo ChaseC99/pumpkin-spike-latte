@@ -27,7 +27,7 @@ export default function Info() {
                 style={{ justifyContent: "left", gap: "24px" }}
                 target="_blank"
                 rel="noopener noreferrer"
-                href='https://www.google.com/maps/search/?api=1&query=Kevin%20Moran%20Park'
+                href='https://www.google.com/maps/place/Washington+Park,+840+W+Washington+Ave,+Sunnyvale,+CA+94086/@37.3773241,-122.0403197,16z/data=!4m6!3m5!1s0x808fb6f65b6cdfe1:0xf5200f5e461e28e5!8m2!3d37.3773241!4d-122.0403197!16s%2Fg%2F1tf8tb9y'
             >
                 <LocationOnOutlinedIcon />
                 <div style={{width: "100%"}}>
