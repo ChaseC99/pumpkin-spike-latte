@@ -214,16 +214,17 @@ export default function Info() {
                     <p>Spotify Playlist</p>
                     <LibraryMusicOutlinedIcon />
                 </a> */}
-                {/* <a
+             
+                <a
                     className={styles.linkContainer}
                     style={{ justifyContent: 'space-between', marginBottom: '12px'}}
                     target="_blank"
                     rel="noopener noreferrer"
-                    href='https://forms.gle/VCMnsypTr3wWXjL58'
+                    href='https://forms.gle/2QV7YZSAXsCz31Lx9'
                 >
                     <p>Superlatives Voting</p>
                     <EmojiEventsIcon />
-                </a> */}
+                </a>
                 <a
                     className={styles.linkContainer}
                     style={{ justifyContent: 'space-between' }}
